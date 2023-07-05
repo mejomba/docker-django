@@ -19,4 +19,4 @@ RUN python -m venv /venv && \
     adduser --disabled-password --no-create-home app
 
 ENV PATH="/venv/bin:$PATH"
-USER app
+#USER app
