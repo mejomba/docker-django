@@ -18,6 +18,10 @@ RUN python -m venv /venv && \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home app && \
     chown -R .:app /venv && \
+    mkdir -p /vol/web/static && \
+    mkdir -p /vol/web/media && \
+    chown -R .:app /vol && \
+    chmod -R 755 /vol
 
 
 ENV PATH="/venv/bin:$PATH"
