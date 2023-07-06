@@ -20,8 +20,8 @@ RUN python -m venv /venv && \
 #    chown -R .:app /venv && \
     mkdir -p /vol/web/static && \
     mkdir -p /vol/web/media && \
-    chown -R .:app /vol && \
-    chmod -R 755 /vol
+#    chown -R .:app /vol && \
+#    chmod -R 755 /vol
 
 
 ENV PATH="/venv/bin:$PATH"
