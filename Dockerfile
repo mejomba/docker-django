@@ -17,7 +17,7 @@ RUN python -m venv /venv && \
     /venv/bin/pip install -r /requirements.txt && \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home app && \
-    chown -R .:app /venv && \
+#    chown -R .:app /venv && \
     mkdir -p /vol/web/static && \
     mkdir -p /vol/web/media && \
     chown -R .:app /vol && \
@@ -25,4 +25,4 @@ RUN python -m venv /venv && \
 
 
 ENV PATH="/venv/bin:$PATH"
-USER app
+#USER app
