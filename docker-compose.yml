@@ -11,6 +11,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - ./data/web:/vol/web
     environment:
       - SECRET_KEY=SOMESECRETKEY
       - DEBUG=1
